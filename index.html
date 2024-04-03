@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ukrainian Visual Word Sense Disambiguation Benchmark</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <link href="main/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dd945917ca.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid">
+    <div class="row justify-content-center bg-light border-bottom fixed-top">
+        <div class="col-sm-8">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler shadow-none border-0 align-items-end" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto ps-3">
+                        <li class="nav-item d-sm-none d-none d-md-none d-lg-block">
+                            <a class="navbar-brand" href="https://unlp.org.ua/">
+                                <img class="conference" src="img/unlp_logo.png">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#results">Results</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bibtex">Bibtex</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="https://ucu.edu.ua/en/" class="ps-2">
+                    <img class="logo d-sm-none d-none d-md-none d-lg-block" src="img/ucu.png">
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid bg-light m">
+        <div class="row justify-content-center" id="about">
+            <div class="col-sm-8 pt-5">
+                <h2 class="text-center pt-5 pb-3">Ukrainian Visual Word Sense Disambiguation Benchmark</h2>
+                <div class="row justify-content-center g-1">
+                    <div class="col-md-2 text-center">
+                        <a href="https://www.linkedin.com/in/yura-laba/" class="text-decoration-none"
+                           target="_blank">
+                            <img src="img/yurii_laba.jpeg"
+                                 class="rounded-circle img-fluid d-sm-none d-none d-md-block px-1">
+                            <small>Yurii Laba</small>
+                        </a>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <a href="https://apps.ucu.edu.ua/en/oles-dobosevych/" class="text-decoration-none"
+                           target="_blank">
+                            <img src="img/oles_dobosevych.jpeg"
+                                 class="rounded-circle img-fluid d-sm-none d-none d-md-block px-1">
+                            <small>Oles Dobosevych</small>
+                        </a>
+                    </div>
+                </div>
+                <h6 class="text-center pt-3">
+                    <a class="text-decoration-none" href="http://ucu.edu.ua/en" target="_blank">Ukrainian Catholic University</a>
+                </h6>
+                <h6 class="text-center">
+                    <a class="btn btn-dark" href="http://arxiv.org/abs/xxxx.xxxx" role="button" target="_blank">
+                        <span class="icon"><i class="ai ai-arxiv fa-fw"></i></span>
+                        <span>arXiv</span>
+                    </a>
+                </h6>
+            </div>
+        </div>
+        <div class="container-fluid pt-3">
+            <div class="section">
+                <div class="row justify-content-center">
+                    <div class="col-sm-8">
+                        <p>This study presents a benchmark for evaluating the Visual Word Sense Disambiguation
+                            (Visual-WSD) task in
+                            Ukrainian. The main goal of the Visual-WSD task is to identify, with minimal contextual
+                            information, the most
+                            appropriate representation of a given ambiguous word from a set of ten images. To construct
+                            this benchmark, we
+                            followed a methodology similar to that proposed by Raganato et al. (2023), who previously
+                            introduced benchmarks for
+                            the Visual-WSD task in English, Italian, and Farsi. This approach allows us to incorporate
+                            the Ukrainian benchmark
+                            into a broader framework for cross-language model performance comparisons. We collected the
+                            benchmark
+                            data semi-automatically and refined it with input from domain experts. We then assessed
+                            eight multilingual
+                            and multimodal language models using this benchmark. However, all tested models performed
+                            worse than the
+                            zero-shot CLIP-based baseline model (Radford et al., 2021) used by Raganato et al. (2023)
+                            for the English Visual-
+                            WSD task. Our analysis revealed a significant performance gap in the Visual-WSD task between
+                            Ukrainian and English.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script async>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            };
+        </script>
+</body>
+</html>
